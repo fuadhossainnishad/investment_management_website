@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 
 export default function Index() {
   return (
@@ -139,11 +138,9 @@ export default function Index() {
 
           {/* App Screenshot */}
           <div className="flex justify-center px-0 md:px-28">
-            <div className="w-full max-w-5xl overflow-hidden rounded-2xl border-2 border-neutral-border shadow-[0_339px_95px_0_rgba(11,27,76,0.00),0_217px_87px_0_rgba(11,27,76,0.01),0_122px_73px_0_rgba(11,27,76,0.05),0_54px_54px_0_rgba(11,27,76,0.09),0_14px_30px_0_rgba(11,27,76,0.10)]">
-              <Image
+            <div className="w-full max-w-[1024px] overflow-hidden rounded-2xl border-2 border-neutral-border shadow-[0_339px_95px_0_rgba(11,27,76,0.00),0_217px_87px_0_rgba(11,27,76,0.01),0_122px_73px_0_rgba(11,27,76,0.05),0_54px_54px_0_rgba(11,27,76,0.09),0_14px_30px_0_rgba(11,27,76,0.10)]">
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/ebf8343b71f670de71ac0d878f673c5197f02a5b?width=2048"
-               height={100}
-               width={100}
                 alt="TermSheetGenie Application Interface"
                 className="h-auto w-full"
               />
