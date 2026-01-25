@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-neutral-bg px-6 py-12 md:px-12 md:pb-12 md:pt-24">
-      <div className="mx-auto max-w-[1440px]">
+    <footer className=" px-6 py-12 md:px-12 md:pb-12 md:pt-24 w-full">
+      <div className="mx-[10%]">
         {/* Main Footer Content */}
-        <div className="mb-6 flex flex-col gap-12 md:flex-row md:gap-12">
+        <div className="mb-6 flex justify-between gap-12 md:flex-row md:gap-12">
           {/* Logo and Social */}
           <div className="flex flex-1 flex-col justify-between gap-8">
             <div className="flex items-center gap-2">
@@ -22,7 +22,7 @@ export default function Footer() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="font-sen text-[28px] font-bold leading-[100%] tracking-[-0.04em] text-brand-blue">
+              <span className="font-sen text-[28px] text-[#2D60FF] font-bold leading-[100%] tracking-[-0.04em] text-brand-blue">
                 TermSheetGenie
               </span>
             </div>

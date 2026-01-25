@@ -24,7 +24,7 @@ export default function Logo() {
           fill="#0B33B1"
         />
       </svg>
-      <span className="font-sen text-[28px] font-bold leading-[100%] tracking-[-0.04em] text-brand-blue-darker">
+      <span className="font-sen text-[28px] text-[#0B33B1] font-bold leading-[100%] tracking-[-0.04em] text-brand-blue-darker">
         TermSheetGenie
       </span>
     </div>

@@ -10,12 +10,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-neutral-bg">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-12">
-        <div className="flex h-[76px] items-center justify-between py-4">
+    <header className="sticky top-0 z-50 bg-[#F5F6FA]">
+      <div className="mx-[10%] max-w-360 px-6 md:px-12">
+        <div className="flex h-19 items-center justify-between py-4">
           {/* Logo and Navigation */}
           <div className="flex items-center gap-8 md:gap-12">
-            <Link href='/' to="/">
+            <Link href='/' >
               <Logo />
             </Link>
 
@@ -35,10 +35,10 @@ export default function Header() {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-6 md:gap-8">
-            <button className="hidden text-[15px] font-medium leading-5 text-neutral-text transition-colors hover:text-brand-blue md:block">
+            <button className="hidden text-[15px] font-medium leading-5 text-[#1B1E28] transition-colors hover:text-brand-blue md:block">
               Log in
             </button>
-            <button className="gradient-brand shadow-brand flex items-center justify-center rounded-[32px] border border-brand-blue-border px-6 py-3 text-[15px] font-medium leading-5 text-neutral-bg transition-transform hover:scale-105">
+            <button className="bg-linear-to-l from-[#1B3A99] via-[#2D60FF] to-[#1B3A99] shadow-2xl flex items-center justify-center rounded-4xl border border-[#2648B5] px-6 py-3 text-[15px] font-medium leading-5 text-[#F5F6FA] transition-transform hover:scale-105">
               Sign up
             </button>
           </div>
