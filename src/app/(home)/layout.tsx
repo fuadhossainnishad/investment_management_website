@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Public_Sans } from 'next/font/google';
+import Footer from "@/components/Footer";
+import Header from '../../components/Header';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -32,9 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${publicSans.variable} antialiased `}
+        className={` ${publicSans.variable} antialiased min-h-screen flex flex-col justify-between `}
       >
-        {children}
+        <Header />
+        <section className="flex-1 px-[20%] space-y-12">{children}</section>
+        <Footer />
       </body>
     </html>
   );

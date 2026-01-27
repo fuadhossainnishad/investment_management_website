@@ -10,16 +10,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F5F6FA]">
-      <div className="mx-[10%] max-w-360 px-6 md:px-12">
+    <header className="sticky top-0 z-50 bg-[#F5F6FA] border-b border-gray-400/20 px-[20%]">
+      <div className="">
         <div className="flex h-19 items-center justify-between py-4">
           {/* Logo and Navigation */}
-          <div className="flex items-center gap-8 md:gap-12">
             <Link href='/' >
               <Logo />
             </Link>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation
             <nav className="hidden items-center gap-8 md:flex">
               {navLinks.map((link) => (
                 <a
@@ -30,17 +29,17 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-            </nav>
-          </div>
+            </nav> */}
+ 
 
           {/* Action Buttons */}
           <div className="flex items-center gap-6 md:gap-8">
-            <button className="hidden text-[15px] font-medium leading-5 text-[#1B1E28] transition-colors hover:text-brand-blue md:block">
+            <Link href='/signIn' className="hidden text-[15px] font-medium leading-5 text-[#1B1E28] transition-colors hover:text-brand-blue md:block">
               Log in
-            </button>
-            <button className="bg-linear-to-l from-[#1B3A99] via-[#2D60FF] to-[#1B3A99] shadow-2xl flex items-center justify-center rounded-4xl border border-[#2648B5] px-6 py-3 text-[15px] font-medium leading-5 text-[#F5F6FA] transition-transform hover:scale-105">
+            </Link>
+            <Link href='/signUp' className="bg-[#1B3A99] shadow-2xl flex items-center justify-center rounded-4xl border border-[#2648B5] px-6 py-3 text-[15px] font-medium leading-5 text-[#F5F6FA] transition-transform hover:scale-105">
               Sign up
-            </button>
+            </Link>
           </div>
         </div>
       </div>

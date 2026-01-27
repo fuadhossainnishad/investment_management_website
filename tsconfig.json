@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/(auth)/(additionalInfo)/roleSelection"  ],
   "exclude": ["node_modules"]
 }

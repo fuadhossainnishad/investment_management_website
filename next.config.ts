@@ -21,13 +21,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  redirects: async () => [
-    {
-      source: '/home',
-      destination: '/',
-      permanent: false,
-    }
-  ]
+  // redirects: async () => [
+  //   {
+  //     source: '/home',
+  //     destination: '/',
+  //     permanent: false,
+  //   }
+  // ]
 };
 
 export default nextConfig;
