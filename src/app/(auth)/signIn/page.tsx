@@ -1,17 +1,20 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberAccount, setRememberAccount] = useState(false);
+  const router = useRouter()
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
     console.log("Login attempted with:", { email, password, rememberAccount });
+    router.push('/home')
   };
 
   const handleGoogleSignIn = () => {

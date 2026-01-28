@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Page() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberAccount, setRememberAccount] = useState(false);
@@ -12,7 +13,7 @@ export default function Page() {
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
-    console.log("Login attempted with:", { email, password, rememberAccount });
+    console.log("Login attempted with:", { name, email, password, rememberAccount });
     router.push('/verifyOtp')
   };
 
@@ -81,8 +82,8 @@ export default function Page() {
                 type="name"
                 id="name"
                 placeholder="Enter your name"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="h-8 px-2.5 py-2.5 border border-[#CCC] rounded-[10px] font-roboto text-[10px] placeholder:text-[#CCC] focus:outline-none focus:ring-2 focus:ring-[#0B33B1] focus:border-transparent"
               />
             </div>
